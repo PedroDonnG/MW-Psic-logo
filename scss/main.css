@@ -50,11 +50,21 @@ body {
   height: 500px;
   border-radius: 40px;
   position: relative;
-  overflow: visible;
   display: flex;
   align-items: center;
   padding-left: 80px;
   margin-bottom: 100px;
+}
+@media (max-width: 900px) {
+  .box-verde {
+    height: auto;
+    flex-direction: column;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
 }
 
 .texto-principal {
@@ -79,6 +89,14 @@ body {
   font-size: 1.63rem;
   font-weight: 300;
   margin-bottom: 40px;
+}
+@media (max-width: 900px) {
+  .texto-principal {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .botao-wpp {
@@ -111,6 +129,20 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
+}
+@media (max-width: 900px) {
+  .imagem-psicologo {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    right: auto;
+    bottom: auto;
+    margin-top: 20px;
+  }
+  .imagem-psicologo img {
+    height: auto;
+  }
 }
 
 .secao-atendimento {
@@ -199,6 +231,16 @@ body {
   gap: 15px;
 }
 
+@media (max-width: 900px) {
+  .secao-atendimento {
+    align-items: center;
+    padding: 0 20px;
+  }
+  .card-atendimento {
+    width: 100%;
+    max-width: 400px;
+  }
+}
 .botao-final {
   width: 100%;
   display: flex;
@@ -221,7 +263,7 @@ body {
 }
 
 .secao-beneficios {
-  width: 100%;
+  width: 100vw;
   background-color: #1a8a84;
   padding: 80px 0;
   display: flex;
@@ -280,7 +322,7 @@ body {
 }
 .card-beneficio h3 {
   font-family: "Geologica", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: 1px;
@@ -288,20 +330,23 @@ body {
 }
 .card-beneficio p {
   font-family: "Crimson Pro", serif;
-  font-size: 0.95rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 900;
   color: #FFFFFF;
   line-height: 1.6;
   text-align: center;
 }
-
-@media (max-width: 900px) {
-  .secao-atendimento {
+@media (max-width: 600px) {
+  .card-beneficio {
     align-items: center;
-    padding: 0 20px;
+    text-align: center;
   }
-  .card-atendimento {
-    width: 100%;
-    max-width: 400px;
+  .card-beneficio p {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .card-beneficio p span {
+    display: block;
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
