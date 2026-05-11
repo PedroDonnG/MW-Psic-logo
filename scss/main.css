@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Geologica", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.header-externo {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.header-externo .logo-box {
+  width: 102.7px;
+  height: 102.7px;
+}
+.header-externo .logo-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header-externo .texto-logo .marca {
+  font-size: 1.81rem;
+  font-weight: 700;
+  color: #115b57;
+  line-height: 1;
+}
+.header-externo .texto-logo .tagline {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #555;
+}
+
+.box-verde {
+  background-color: #115b57;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 40px;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  margin-bottom: 100px;
+}
+
+.texto-principal {
+  max-width: 600px;
+  color: #FFFFFF;
+  z-index: 2;
+}
+.texto-principal h1 {
+  font-size: 3.13rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.texto-principal h1 .destaque {
+  color: #00ffd1;
+}
+.texto-principal p {
+  font-size: 1.63rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.botao-wpp {
+  background-color: #00ffd1;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 22px 45px;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.3rem;
+}
+.botao-wpp img {
+  width: 35px;
+}
+
+.imagem-psicologo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 477.9px;
+  height: 659.3px;
+  z-index: 1;
+}
+.imagem-psicologo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.secao-atendimento {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 0 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+.secao-atendimento h4 {
+  font-family: "Geologica", sans-serif;
+  font-size: 1.875rem;
+  color: #cccccc;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .secao-atendimento {
+    padding: 0 20px;
+    align-items: center;
+  }
+}
+
+.container-atendimento {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  transform: translateX(-40px);
+}
+@media (max-width: 900px) {
+  .container-atendimento {
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(0);
+  }
+}
+
+.card-atendimento {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: #115b57;
+  border-radius: 20px;
+}
+.card-atendimento .icon-wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: #115b57;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.card-atendimento .icon-wrapper img {
+  margin-top: 15px;
+  width: 65px;
+  height: 65px;
+}
+.card-atendimento h3 {
+  font-family: "Geologica", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+.card-atendimento ul {
+  font-family: "Geologica", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.6;
+  max-width: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.botao-final {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: -80px;
+}
+.botao-final .botao-wpp {
+  padding: 22px 60px;
+  font-size: 1.6rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.botao-final .botao-wpp img {
+  width: 35px;
+}
+@media (max-width: 900px) {
+  .botao-final {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .secao-atendimento {
+    align-items: center;
+    padding: 0 20px;
+  }
+  .card-atendimento {
+    width: 100%;
+    max-width: 400px;
+  }
+}/*# sourceMappingURL=main.css.map */
