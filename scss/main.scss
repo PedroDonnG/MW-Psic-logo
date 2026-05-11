@@ -3,7 +3,9 @@ $verde-menta: #00ffd1;
 $verde-turquesa: #2abfa4;
 $branco: #FFFFFF;
 $cinza-claro: #cccccc;
+$ciano: #1a8a84;
 $fonte-sans: 'Geologica', sans-serif;
+$fonte-serif: 'Crimson Pro', serif;
 
 * {
     margin: 0;
@@ -73,7 +75,7 @@ body {
 
 .texto-principal {
     max-width: 600px;
-    color: $branco;
+    color: $verde-turquesa;
     z-index: 2;
 
     h1 {
@@ -83,11 +85,15 @@ body {
         margin-bottom: 20px;
 
         .destaque {
-            color: $verde-menta;
+            color: $branco;
+            font: $fonte-sans;
+            font-variation-settings: "slnt" -12;
         }
     }
 
     p {
+        font: $fonte-sans;
+        color: $branco;
         font-size: 1.63rem;
         font-weight: 300;
         margin-bottom: 40px;
@@ -222,7 +228,7 @@ body {
     }
 }
 
-// No final da .secao-atendimento ou onde estiver o .botao-final
+
 
 .botao-final {
     width: 100%;
@@ -245,6 +251,80 @@ body {
 
     @media (max-width: 900px) {
         margin-left: 0;
+    }
+}
+
+.secao-beneficios {
+    width: 100%;
+    background-color: $ciano;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-beneficios {
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 80px; 
+
+    h2 {
+        font-family: $fonte-sans;
+        font-size: 2.5rem;
+        color: $cinza-claro;
+        font-weight: 700;
+        margin-bottom: 60px;
+        text-align: left; 
+    }
+
+    @media (max-width: 900px) {
+        padding: 0 20px;
+        h2 { text-align: center; }
+    }
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.card-beneficio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span {
+        font-family: $fonte-sans;
+        font-size: 8.375rem; 
+        font-weight: 900;
+        color: $verde-menta; 
+        line-height: 1;
+    }
+
+    h3 {
+        font-family: $fonte-sans;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: $branco;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    p {
+        font-family: $fonte-serif;
+        font-size: 0.95rem;
+        font-weight: 300;
+        color: $branco;
+        line-height: 1.6;
+        text-align: center;
     }
 }
 

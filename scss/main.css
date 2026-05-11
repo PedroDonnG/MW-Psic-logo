@@ -59,7 +59,7 @@ body {
 
 .texto-principal {
   max-width: 600px;
-  color: #FFFFFF;
+  color: #2abfa4;
   z-index: 2;
 }
 .texto-principal h1 {
@@ -69,9 +69,13 @@ body {
   margin-bottom: 20px;
 }
 .texto-principal h1 .destaque {
-  color: #00ffd1;
+  color: #FFFFFF;
+  font: "Geologica", sans-serif;
+  font-variation-settings: "slnt" -12;
 }
 .texto-principal p {
+  font: "Geologica", sans-serif;
+  color: #FFFFFF;
   font-size: 1.63rem;
   font-weight: 300;
   margin-bottom: 40px;
@@ -214,6 +218,81 @@ body {
   .botao-final {
     margin-left: 0;
   }
+}
+
+.secao-beneficios {
+  width: 100%;
+  background-color: #1a8a84;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container-beneficios {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 80px;
+}
+.container-beneficios h2 {
+  font-family: "Geologica", sans-serif;
+  font-size: 2.5rem;
+  color: #cccccc;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .container-beneficios {
+    padding: 0 20px;
+  }
+  .container-beneficios h2 {
+    text-align: center;
+  }
+}
+
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  .grid-beneficios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid-beneficios {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-beneficio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card-beneficio span {
+  font-family: "Geologica", sans-serif;
+  font-size: 8.375rem;
+  font-weight: 900;
+  color: #00ffd1;
+  line-height: 1;
+}
+.card-beneficio h3 {
+  font-family: "Geologica", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.card-beneficio p {
+  font-family: "Crimson Pro", serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  line-height: 1.6;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
