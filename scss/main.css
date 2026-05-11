@@ -349,4 +349,105 @@ body {
     display: block;
     margin-bottom: 5px;
   }
+}
+
+.secao-sobre {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #FFFFFF;
+}
+
+.container-sobre {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+.container-sobre .titulo-sobre {
+  font-family: "Geologica", sans-serif;
+  font-size: 2.5rem;
+  color: #cccccc;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: right;
+}
+@media (max-width: 900px) {
+  .container-sobre {
+    padding: 0 20px;
+  }
+  .container-sobre .titulo-sobre {
+    text-align: center;
+  }
+}
+
+.conteudo-sobre {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+@media (max-width: 900px) {
+  .conteudo-sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.foto-perfil {
+  flex: 0 0 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 900px) {
+  .foto-perfil {
+    flex: 0 0 280px;
+    height: 280px;
+  }
+}
+
+.texto-sobre {
+  flex: 1;
+}
+.texto-sobre p {
+  font-family: "Geologica", sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.texto-sobre p strong {
+  font-weight: 700;
+  color: #115b57;
+}
+@media (max-width: 900px) {
+  .texto-sobre p {
+    text-align: justify;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.botao-sobre {
+  margin-top: 40px;
+}
+.botao-sobre .botao-wpp {
+  font: "Geologica", sans-serif;
+  padding: 18px 40px;
+  font-size: 1.313rem;
+}
+@media (max-width: 900px) {
+  .botao-sobre {
+    display: flex;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
