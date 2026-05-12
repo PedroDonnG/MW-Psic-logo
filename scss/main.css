@@ -450,4 +450,93 @@ body {
     display: flex;
     justify-content: center;
   }
+}
+
+.secao-faq {
+  width: 100vw;
+  background-color: #1a8a84;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container-faq {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 80px;
+}
+.container-faq h2 {
+  font-family: "Geologica", sans-serif;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .container-faq {
+    padding: 0 20px;
+  }
+  .container-faq h2 {
+    text-align: center;
+  }
+}
+
+.lista-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.item-faq summary::-webkit-details-marker {
+  display: none;
+}
+.item-faq .pergunta-pill {
+  list-style: none;
+  background-color: #2abfa4;
+  color: #115b57;
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border-radius: 100px;
+  outline: none;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .item-faq .pergunta-pill {
+    max-width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+  }
+}
+.item-faq p {
+  font-family: "Crimson Pro", serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  line-height: 1.6;
+  padding-left: 20px;
+  max-width: 600px;
+  margin-top: 5px;
+}
+.item-faq p strong {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .item-faq p {
+    padding-left: 0;
+    text-align: justify;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

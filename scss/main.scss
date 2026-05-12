@@ -4,6 +4,7 @@ $verde-turquesa: #2abfa4;
 $branco: #FFFFFF;
 $cinza-claro: #cccccc;
 $ciano: #1a8a84;
+$ciano-escuro: #115b57;
 $fonte-sans: 'Geologica', sans-serif;
 $fonte-serif: 'Crimson Pro', serif;
 
@@ -486,5 +487,101 @@ body {
     @media (max-width: 900px) {
         display: flex;
         justify-content: center;
+    }
+}
+
+//
+
+.secao-faq {
+    width: 100vw;
+    background-color: $ciano;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container-faq {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 80px;
+
+    h2 {
+        font-family: $fonte-sans;
+        font-size: 2.5rem;
+        color: $branco;
+        font-weight: 700;
+        margin-bottom: 60px;
+        text-align: left;
+    }
+
+    @media (max-width: 900px) {
+        padding: 0 20px;
+
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+.lista-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .pergunta-pill {
+        list-style: none;
+        background-color: $verde-turquesa;
+        color: $ciano-escuro;
+        font-family: $fonte-sans;
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 15px 40px;
+        border-radius: 100px;
+        outline: none;
+
+
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        text-align: left;
+
+        @media (max-width: 900px) {
+            max-width: 100%;
+            text-align: center;
+            padding: 15px 20px;
+        }
+    }
+
+    p {
+        font-family: $fonte-serif;
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: $branco;
+        line-height: 1.6;
+        padding-left: 20px;
+        max-width: 600px;
+        margin-top: 5px;
+
+        strong {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            padding-left: 0;
+            text-align: justify;
+            max-width: 100%;
+        }
     }
 }
