@@ -75,11 +75,12 @@ body {
     @media (max-width: 900px) {
         height: auto;
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 40px 20px 0 20px;
         margin-bottom: 40px;
         text-align: center;
         align-items: center;
         overflow: hidden;
+        display: flex;
     }
 }
 
@@ -152,11 +153,12 @@ body {
     @media (max-width: 900px) {
         position: relative;
         width: 100%;
-        max-width: 300px;
+        max-width: 320px;
         height: auto;
-        right: auto;
-        bottom: auto;
+        margin-bottom: 0;
+        display: flex;
         margin-top: 20px;
+        align-items: flex-end;
 
         img {
             height: auto;
